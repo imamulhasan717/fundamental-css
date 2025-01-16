@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals</title>
+    <style>
+        /* 1. Basic Selectors (element, class, id) */
+        body {
+            font-family: Arial, sans-serif; /* Font style */
+            background-color: #f0f8ff; /* Background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. Class Selector */
+        .container {
+            width: 80%; 
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* 3. ID Selector */
+        #header {
+            text-align: center;
+            color: #333;
+            background-color: #4CAF50;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        /* 4. Text Styling */
+        h1 {
+            font-size: 36px; 
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* 5. Box Model: margin, border, padding */
+        .box {
+            width: 200px;
+            height: 150px;
+            background-color: #4CAF50;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        /* 6. Positioning: static, relative, absolute */
+        .relative-box {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: #f1c40f;
+            padding: 20px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            background-color: #e74c3c;
+            padding: 20px;
+        }
+
+        /* 7. Flexbox Layout */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .flex-item {
+            width: 30%;
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* 8. Hover Effects */
+        .flex-item:hover {
+            background-color: #2980b9;
+            cursor: pointer;
+        }
+
+        /* 9. Media Query for responsiveness */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .flex-item {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>CSS Fundamentals</h1>
+    </div>
+
+    <div class="container">
+        <p>Welcome to the world of CSS! This is a demonstration of some of the fundamental CSS concepts.</p>
+
+        <!-- Box Model -->
+        <div class="box">
+            <p>This is a simple box demonstrating the box model.</p>
+        </div>
+
+        <!-- Positioning -->
+        <div class="relative-box">
+            <p>This box is positioned relatively with respect to its normal position.</p>
+        </div>
+        
+        <div class="absolute-box">
+            <p>This box is positioned absolutely with respect to its nearest positioned ancestor.</p>
+        </div>
+
+        <!-- Flexbox Layout -->
+        <div class="flex-container">
+            <div class="flex-item">Flex Item 1</div>
+            <div class="flex-item">Flex Item 2</div>
+            <div class="flex-item">Flex Item 3</div>
+        </div>
+    </div>
+
+</body>
+</html>
